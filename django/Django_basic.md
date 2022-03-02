@@ -31,9 +31,9 @@ Django는 MTV Pattern 이라고 한다. (특별한 이유는 없다.)
 - Model 을 통해 요청을 충족시키는데 필요한 데이터에 접근
 - template에게 응답의 서식 설정을 맡김
 
-![image-20220302092553560](C:\Users\qqq59\AppData\Roaming\Typora\typora-user-images\image-20220302092553560.png)
 
-https://user-images.githubusercontent.com/97648339/156375430-993a2fec-9cc9-495a-a4ec-588cc758dc49.JPG
+
+![장고1](https://user-images.githubusercontent.com/97648339/156375430-993a2fec-9cc9-495a-a4ec-588cc758dc49.JPG)
 
 
 
@@ -104,14 +104,12 @@ $ python manage.py runserver
 - **[중요]** 앱을 생성하고 `settings.py` 등록하시오.
 - `INSTALLED_APPS ` 에 먼저 등록하고 앱을 생성하면 다음과 같은 오류가 발생
 
-https://user-images.githubusercontent.com/97648339/156375456-59d09a9a-d1b8-41b2-9ec6-e7c309603c40.png
+![장고3](https://user-images.githubusercontent.com/97648339/156375456-59d09a9a-d1b8-41b2-9ec6-e7c309603c40.png)
 
 #### 6. 앱 등록
 
 - urls.py 에 등록한 함수가 정의되지 않았을 경우
-- https://user-images.githubusercontent.com/97648339/156375471-a3d87aa1-de46-4fd5-a39f-dce55da9f44b.png
-
-
+- ![장고4](https://user-images.githubusercontent.com/97648339/156375471-a3d87aa1-de46-4fd5-a39f-dce55da9f44b.png)
 
 ### 장고 폴더 내 파일
 
@@ -178,8 +176,7 @@ https://user-images.githubusercontent.com/97648339/156375456-59d09a9a-d1b8-41b2-
 
 - 앱 등록시 권장사항
 
-  - ![image-20220302102823786](Django_basic.assets/image-20220302102823786.png)
-  - https://user-images.githubusercontent.com/97648339/156375443-c6ae7115-5adb-4a3c-af4c-164f0afccadf.JPG
+  - ![장고2](https://user-images.githubusercontent.com/97648339/156375443-c6ae7115-5adb-4a3c-af4c-164f0afccadf.JPG)
   - #Local apps
     - 내가 만든 앱들
   - #Third party apps
