@@ -46,7 +46,7 @@ Django는 MTV Pattern 이라고 한다. (특별한 이유는 없다.)
 - 가상환경 생성
 
 ```shell
-$ python -m venv vevn
+$ python -m venv venv
 ```
 
 - 활성화
