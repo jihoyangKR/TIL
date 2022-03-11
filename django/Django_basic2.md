@@ -28,6 +28,9 @@
 
 # HTML 'for' attribute
 
+- for 속성의 값과 일치하는 id를 가진 문서의 첫 번째 요소를 제어
+  - 연결 된 요소가 lablelable인 경우 이 요소에 대한 labeled control이 됨
+
 # HTML 'id' attribute
 
 - 전체 문서에서 고유(must be unique)해야하는 식별자를 정의
