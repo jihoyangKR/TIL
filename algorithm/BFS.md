@@ -16,3 +16,48 @@
       - 간선마다 거리가 다를 때는 판단 할 수가 없다.
 
 ![image-20220225165845750](C:\Users\qqq59\AppData\Roaming\Typora\typora-user-images\image-20220225165845750.png)
+
+
+
+# BFS 활용법
+
+1. 한 배열 내에서 여러 시작점을 동시에 탐색해야 할 경우
+
+   배열이 아래와 같을 때 [0, 0] 좌표와 [4, 5] 좌표를 동시에 탐색해야 한다면
+
+   ```
+   1 -1 0 0 0 0 
+   0 -1 0 0 0 0
+   0 0 0 0 -1 0
+   0 0 0 0 -1 1
+   ```
+
+    for 문을 통해 `queue`에 인자가 1인 좌표들을 모두 `append` 해 주고
+
+   맨 앞 queue의 인자를 매개변수로 하는 BFS를 실행해서 탐색시키면 배열에서 추가한 좌표들 부터 탐색하므로 동시에 좌표를 탐색하는 모양이 된다.
+
+   이 때 pop을 하면 맨 앞인자가 삭제되므로 queue.[0]을 사용하면 된다.
+
+   
+
+2. BFS에서 깊이 체크하기
+
+   ```python
+   def BFS(r, c):
+       visited[r][c] = 1
+   
+       while q:
+           r, c = q.popleft()
+           for k in range(4):
+               nr, nc = r + dr[k], c + dc[k]
+               if 0 <= nr < N and 0 <= nc < M:
+                   if tomato[nr][nc] == 0 and not visited[nr][nc]:
+                       q.append((nr, nc))
+                       # BFS의 깊이가 깊어질 때 마다 체크해줘야하므로
+                       tomato[nr][nc] = tomato[r][c] + 1
+                       # 방문 체크
+                       visited[nr][nc] = 1
+   ```
+
+   
+
