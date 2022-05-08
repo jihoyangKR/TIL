@@ -61,7 +61,7 @@ JVM은 크게 아래와 같이 이루어져 있다.
 
 ## Memory Area(Runtime Data Area)의 구조
 
-![images%2Fshin_stealer%2Fpost%2F024b42b8-85fa-4393-9668-6ef15227a0d0%2Fimage](images/images%2Fshin_stealer%2Fpost%2F024b42b8-85fa-4393-9668-6ef15227a0d0%2Fimage-165203116506211.png)
+![data_area](images/data_area.png)
 
 1) Method Area
 
