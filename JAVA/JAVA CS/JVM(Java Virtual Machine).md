@@ -13,7 +13,7 @@ JAVA는 OS에 종속적이지 않다는 특징을 가지고 있다. OS에 종속
 - 스택 기반의 가상 머신: 대표적인 컴퓨터 아키텍처인 인텔 x86 아키텍처나 ARM 아키텍처와 같은 하드웨어가 레지스터 기반으로 동작하는 데 비해 JVM은 스택 기반으로 동작한다.
 
   - 피연산자와 연산 후 결과를 스택에 저장한다. 다음 피연산자의 메모리 위치를 기억할 필요가 없다. SP(stack pointer)가 다음 피연산자의 위치를 나타낸다. 즉 스택에서 POP만 하면 다음 피연산자가 나오기 때문에 피연산자의 메모리를 기억할 필요가 없다.
-  - ![img2](JVM(Java Virtual Machine).assets/img2.png)
+  - ![img2](images/img2-165203111071510.png)
 
 - 심볼릭 레퍼런스
 
@@ -30,8 +30,8 @@ JAVA는 OS에 종속적이지 않다는 특징을 가지고 있다. OS에 종속
 
   - 바이트 오더
     - 메모리 주소를 부여하는 방식으로, 점점 크게 부여하거나 점점 작게 부여하는 방식을 의미한다. 대표적인 예시로 빅엔디안, 리틀엔디안이라는 것이 있고, 이는 시스템이 내부적으로 데이터를 표현하는 방법을 의미한다.
-    - ![빅 엔디안](JVM(Java Virtual Machine).assets/img_c_byteorder_big_endian.png)
-    - ![리틀 엔디안](JVM(Java Virtual Machine).assets/img_c_byteorder_little_endian.png)
+    - ![빅 엔디안](images/img_c_byteorder_big_endian.png)
+    - ![리틀 엔디안](images/img_c_byteorder_little_endian.png)
 
 ## 자바 바이트 코드
 
@@ -39,7 +39,7 @@ WORA(Write Once Run Anywhere)를 구현하기 위해 JVM은 사용자 언어인 
 
 ## JVM 구조
 
-![img](JVM(Java Virtual Machine).assets/img.png)
+![img](images/img-16520311048699.png)
 
 JVM은 크게 아래와 같이 이루어져 있다.
 
@@ -61,7 +61,7 @@ JVM은 크게 아래와 같이 이루어져 있다.
 
 ## Memory Area(Runtime Data Area)의 구조
 
-![images%2Fshin_stealer%2Fpost%2F024b42b8-85fa-4393-9668-6ef15227a0d0%2Fimage](JVM(Java Virtual Machine).assets/images%2Fshin_stealer%2Fpost%2F024b42b8-85fa-4393-9668-6ef15227a0d0%2Fimage.png)
+![images%2Fshin_stealer%2Fpost%2F024b42b8-85fa-4393-9668-6ef15227a0d0%2Fimage](images/images%2Fshin_stealer%2Fpost%2F024b42b8-85fa-4393-9668-6ef15227a0d0%2Fimage-16520310955298.png)
 
 1) Method Area
 
