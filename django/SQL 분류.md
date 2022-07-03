@@ -283,7 +283,7 @@ ALTER TABLE의 3가지 기능
    - 새로운 컬럼 추가
 
    - ```sqlite
-     ALTER TABLE 테이블이름 ADD COLUMN 컬럼이름 데이터타입 설정ㅅ
+     ALTER TABLE 테이블이름 ADD COLUMN 컬럼이름 데이터타입 설정
      ```
 
    - 이때 테이블에 있던 기존 레코드들에는 새로 추가할 필드에 대한 정보가 없다. 그렇기 때문에 NOT NULL 형태의 컬럼은 추가가 불가능하다.
@@ -297,5 +297,3 @@ ALTER TABLE의 3가지 기능
      - ```sqlite
        ALTER TABLE 테이블이름 ADD COLUMN 컬럼이름 TEXT NOT NULL DEFAULT 소제목
        ```
-
-     - 
