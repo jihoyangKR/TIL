@@ -759,7 +759,7 @@ where e.empno = 7788;
 
 기준 테이블에 따라 LEFT OUTER JOIN(LEFT JOIN), RIGHT OUTER JOIN(RIGHT JOIN)으로 구분, (FULL OUTER JOIN은 MySQL에서는 지원하지 않음)
 
-![image-20220704012344685](https://raw.githubusercontent.com/jihoyangKR/image_repo/master/img/image-20220704012344685.png?token=AXI75U2IMGP2SDJPKN4J37DCYHBM4)
+![image-20220704012344685](../../../img/image-20220704012344685.png)
 
 ##### LEFT OUTER JOIN의 필요성
 
